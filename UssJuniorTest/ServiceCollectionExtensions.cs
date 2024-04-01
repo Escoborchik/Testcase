@@ -10,6 +10,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IStore, InMemoryStore>();
 
         services.AddScoped<CarRepository>();
-        services.AddScoped<PersonRepository>();
+        services.AddScoped<PersonRepository>();  
+        services.AddEndpointsApiExplorer();
+        services.AddSwaggerGen();
     }
 }
