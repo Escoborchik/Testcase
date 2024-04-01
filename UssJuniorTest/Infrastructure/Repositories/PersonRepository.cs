@@ -17,7 +17,7 @@ public sealed class PersonRepository : IRepository<Person>
     }
 
     /// <inheritdoc />
-    public Person? Get(long id)
+    public Person Get(long id)
     {
         return _store.GetAllPersons().FirstOrDefault(x => x.Id == id);
     }

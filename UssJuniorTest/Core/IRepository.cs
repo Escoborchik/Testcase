@@ -13,7 +13,7 @@ public interface IRepository<out T> where T : Model
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
-    T? Get(long id);
+    T Get(long id);
 
     /// <summary>
     /// Получить все объекты.
